@@ -58,6 +58,7 @@ func main() {
 
 
     // add files (Dockerfile) to tar archive
+    //and write tar body
 
     tar_header := &tar.Header{
         Name: docker_file,
@@ -73,7 +74,7 @@ func main() {
     _, err = tar_buff.Write(read_docker_file)
 
     if err != nil {
-        log.Fatal(err, " :unable to write tar body")
+        log.Fatal(err, " cannot write tar body")
     }
     
     //open archive tar,  so it can be passed to Docker image options
