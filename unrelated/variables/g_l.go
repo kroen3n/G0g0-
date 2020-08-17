@@ -9,11 +9,11 @@ var j string = "uarld"
 
 func local_var(){
 
-  //local var
+        //local var
 	var i string = "henlo"
 	
 	fmt.Println("I am global j called from local_var():", j)
-  fmt.Println(" ")	
+        fmt.Println(" ")	
 	fmt.Println("I am local i called in main() from local_var():", i)
 }
 
