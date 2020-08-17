@@ -124,13 +124,13 @@ func local_var(){
 	fmt.Println(" ")
 	fmt.Println("I am global j called from local_var():", j)
         fmt.Println(" ")	
-	fmt.Println("I am local i called in main():", i)
+	fmt.Println("I am local i called in main() from local_var():", i)
 }
 
 func main(){
 	local_var()
 	fmt.Println(" ")
-	fmt.Println("I am global j called from main()", j)
+	fmt.Println("I am global j called from main():", j)
 }
 ```
 
@@ -141,9 +141,9 @@ root@kr03nen:/home/gog0# go run g_l.go
 
 I am global j called from local_var(): uarld
  
-I am local i called in main(): henlo
+I am local i called in main() from local_var(): henlo
  
-I am global j called from main() uarld
+I am global j called from main(): uarld
 ```
 
 Now, let's change a bit the program and add two more lines at the ending, in main() function:
@@ -163,7 +163,7 @@ func local_var(){
 	
 	fmt.Println("I am global j called from local_var():", j)
         fmt.Println(" ")	
-	fmt.Println("I am local i called in main():", i)
+	fmt.Println("I am local i called in main() from local_var():", i)
 }
 
 func main(){
