@@ -116,13 +116,13 @@ import(
 	"fmt"
 )
 
-//global
-var j string = "uarld"
+
+var j string = "uarld"  //global
 
 func local_var(){
 
-        //local
-	var i string = "henlo"
+        
+	var i string = "henlo"  //local
 	
 	fmt.Println(" ")
 	fmt.Println("I am global j called from local_var():", j)
