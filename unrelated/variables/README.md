@@ -91,13 +91,14 @@ root@kr03nen:/home/gog0#
 ```
 <br></br>
 <i> What did we just notice in the gdb? </i>
-<br>
+<br></br>
 Both variables i, respectively j have been found as string type; however, we have a variable i, declared as type "string". 
 And then, we don't specify any type for j variable - here, Golang will deduce the type of j variable (hence, using the ":=")
 
 
 <b><i> Variables scope - Local and global </i></b>
-<br>
+<br></br>
+
 Just like in other programming languages (Java, c/c++, python, etc), the scope of variables is existent even in Golang.
 As in other programming language, we encounter global and local variables. <br>
 <i>Short recap: <br>
