@@ -103,7 +103,7 @@ Just like in other programming languages (Java, c/c++, python, etc), the scope o
 As in other programming language, we encounter global and local variables. <br>
 <i>Short recap: <br>
 Global variables - variables that can be called anywhere in a program <br>
-Local variables - variables with strict access / called only in specific parts of a program </i>
+Local variables - variables with strict access / called only in specific parts of a program  (functions, for instance) </i>
 
 Small example, program g_l.go
 
