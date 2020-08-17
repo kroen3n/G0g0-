@@ -116,6 +116,8 @@ import docker
 import os, subprocess
 import sys, six
 
+# documentation Docker SDK for Python at link: https://docker-py.readthedocs.io/en/stable/
+
 def BuildImage():
     dockerfile = '''
     FROM python:3.4
