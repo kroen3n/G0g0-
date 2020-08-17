@@ -56,7 +56,8 @@ Or as the Docker engine mentions in the output "Removing intermediate container"
 Notice the "Using cache" line at Step 2/3 ... on my machine, that means there is an existent image with dependent child images. 
 For this step there was no intermediate container created.
 
-However, if I want to create intermediate containers for every step, I can use the option "--no-cache".
+However, if I want to create intermediate containers for every step, I can use the option "--no-cache". 
+<br>
 <i>
 Let's remove the image, just for phun:
 
@@ -67,7 +68,7 @@ Deleted: sha256:eacb7f78036fcefadcbc5b021ddc210c31aeacb7bb436f00dcb5179a251f5c28
 ```
 </i>
 
-Observe the output for step 2/3
+Observe the output for step 2/3 when creating the image with "--no-cache" option:
 
 ```
 root@kr03nen:/home/gog0# docker build --no-cache -t hielaunewimage . 
