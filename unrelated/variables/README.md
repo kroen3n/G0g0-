@@ -96,6 +96,7 @@ Both variables i, respectively j have been found as string type; however, we hav
 And then, we don't specify any type for j variable - here, Golang will deduce the type of j variable (hence, using the ":=")
 
 
+<br></br>
 <b><i> Variables scope - Local and global </i></b>
 <br></br>
 
