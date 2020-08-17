@@ -98,11 +98,11 @@ And then, we don't specify any type for j variable - here, Golang will deduce th
 
 <b> Variables scope - Local and global </b>
 
-Just like in other programming languages (Java, c/c++, python), the scope of variables is existent even in Golang.
-As in other programming language, we encounter global and local variables. 
-Shor recap:
-Global variables - variables that can be called anywhere in a program
-Local variables - variables with strict access / called only in specific parts of a program
+Just like in other programming languages (Java, c/c++, python, etc), the scope of variables is existent even in Golang.
+As in other programming language, we encounter global and local variables. <br>
+<i>Short recap: <br>
+Global variables - variables that can be called anywhere in a program <br>
+Local variables - variables with strict access / called only in specific parts of a program </i>
 
 Small example, program g_l.go
 
