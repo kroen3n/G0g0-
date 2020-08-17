@@ -89,6 +89,7 @@ henlo uarld
 root@kr03nen:/home/gog0# 
 
 ```
+<br></br>
 
 <i> What did we just notice in the gdb? </i>
 <br>
