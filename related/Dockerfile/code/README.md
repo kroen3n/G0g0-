@@ -24,7 +24,7 @@ This instruction will extract from Docker repository the image type we need for 
 an image that has python3)
 <br></br>
 <b><i>RUN</i></b> instruction - this will allow you to "run" commands you have passed. 
-In our case you want to run an update (-y is necessary to pass, since you cannot interract directly when building the image
+In our case you want to run an update (-y is necessary to pass, since you cannot interract directly when building the image)
 
 
 Let's build our image - we shall call it "hielaunewimage". <br>
