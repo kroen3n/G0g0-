@@ -1,4 +1,4 @@
-<b> Building Docker image (basics)  </b>
+<b> Building Docker image (basics -part I)  </b>
 
 
 In this tutorial we will focus on writing Golang code for creating a Docker image
