@@ -96,5 +96,94 @@ Both variables i, respectively j have been found as string type; however, we hav
 And then, we don't specify any type for j variable - here, Golang will deduce the type of j variable (hence, using the ":=")
 
 
+<b> Variables scope - Local and global </b>
+
+Just like in other programming languages (Java, c/c++, python), the scope of variables is existent even in Golang.
+As in other programming language, we encounter global and local variables. 
+Shor recap:
+Global variables - variables that can be called anywhere in a program
+Local variables - variables with strict access / called only in specific parts of a program
+
+Small example, program g_l.go
+
+```
+package main
+
+import(
+	"fmt"
+)
+
+//global
+var j string = "uarld"
+
+func local_var(){
+
+        //local
+	var i string = "henlo"
+	
+	fmt.Println(" ")
+	fmt.Println("I am global j called from local_var():", j)
+        fmt.Println(" ")	
+	fmt.Println("I am local i called in main():", i)
+}
+
+func main(){
+	local_var()
+	fmt.Println(" ")
+	fmt.Println("I am global j called from main()", j)
+}
+```
+
+Let's simply run it:
+
+```
+root@kr03nen:/home/gog0# go run g_l.go 
+
+I am global j called from local_var(): uarld
+ 
+I am local i called in main(): henlo
+ 
+I am global j called from main() uarld
+```
+
+Now, let's change a bit the program and add two more lines at the ending, in main() function:
+
+```
+package main
+
+import(
+	"fmt"
+)
+
+var j string = "uarld"
+
+func local_var(){
+
+	var i string = "henlo"
+	
+	fmt.Println("I am global j called from local_var():", j)
+        fmt.Println(" ")	
+	fmt.Println("I am local i called in main():", i)
+}
+
+func main(){
+	local_var()
+	fmt.Println(" ")
+	fmt.Println("I am global j called from main()", j)
+	fmt.Println(" ")
+	fmt.Println("now call local variable i: ", i)
+}
+
+```
+
+Let's run it:
+
+```
+root@kr03nen:/home/gog0# go run g_l.go 
+# command-line-arguments
+./g_l.go:23:45: undefined: i
+```
+
+Obviously, we have obtained the "undefined: i" error, since we are calling variable i outside its own function, local_var()
 
 
