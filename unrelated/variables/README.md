@@ -92,7 +92,7 @@ root@kr03nen:/home/gog0#
 <br></br>
 <i> What did we just notice in the gdb? </i>
 <br></br>
-Both variables i, respectively j have been found as string type; however, we have a variable i, declared as type "string". 
+Both variables i, respectively j have been found as string type; however, in our code, we have a variable i, declared as type "string". 
 And then, we don't specify any type for j variable - here, Golang will deduce the type of j variable (hence, using the ":=")
 
 
